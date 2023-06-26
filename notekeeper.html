@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Notekeeper App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Notekeeper App</h1>
+        <div class="note-form">
+            <input type="text" id="note-title" placeholder="Title">
+            <input type="text" id="note-tagline" placeholder="Tagline">
+            <textarea id="note-body" placeholder="Note Body"></textarea>
+            <button id="add-note-btn">Add Note</button>
+        </div>
+        <div class="note-grid" id="notes-grid"></div>
+        <div class="pagination">
+            <button id="prev-page-btn">&lt; Prev</button>
+            <button id="next-page-btn">Next &gt;</button>
+        </div>
+    </div>
+
+    <div id="edit-note-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Edit Note</h3>
+            <input type="text" id="edit-note-title" placeholder="Title">
+            <input type="text" id="edit-note-tagline" placeholder="Tagline">
+            <textarea id="edit-note-body" placeholder="Note Body"></textarea>
+            <button id="update-note-btn">Update Note</button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
